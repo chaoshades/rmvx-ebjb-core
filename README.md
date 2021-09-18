@@ -84,7 +84,7 @@ I had a script on which I needed to be able to use the same scene management but
 Still in development...
 
 No test framework was used, only some custom-made classes which allowed me to run tests with a console output.
-> For more info, the source is there : https://github.com/chaoshades/rmvx-ebjb-unit-testing
+> For more info, the source is there : <https://github.com/chaoshades/rmvx-ebjb-unit-testing>
 
 ### Tests
 
