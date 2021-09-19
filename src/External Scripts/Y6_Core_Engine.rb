@@ -1437,7 +1437,7 @@ class Window_Item < Window_Selectable
       enabled = enable?(item)
       rect.width -= 4
       draw_item_name(item, rect.x, rect.y, enabled)
-      contents.draw_text(rect, sprintf("~%2d", number.group), 2)
+      contents.draw_text(rect, sprintf("×%2d", number.group), 2)
     end
   end
   
@@ -1650,7 +1650,7 @@ class Window_ShopNumber < Window_Base
     contents.clear
     draw_item_name(@item, 0, y)
     contents.font.color = normal_color
-    text = sprintf("~%s", @number.group)
+    text = sprintf("×%s", @number.group)
     cx = contents.text_size(text).width
     contents.draw_text(contents.width-cx-4, y, cx, WLH, text, 2)
     self.cursor_rect.set(contents.width-cx-4, y, cx+4, WLH)

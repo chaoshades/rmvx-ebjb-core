@@ -123,6 +123,14 @@ class TestUI_WindowSelectable < TestUI_Class
     @windows.push(detail_window)
   end
   
+  #--------------------------------------------------------------------------
+  # * Window_Selectable with contents aligned to right with no line-width
+  #--------------------------------------------------------------------------
+  def test_alignRight_noWidth
+    w = Window_Selectable_Implemented.new(160,256,160,128,$data_items.compact, 24, true, 0, 2)
+    @windows.push(w)
+  end
+  
 end
 
 

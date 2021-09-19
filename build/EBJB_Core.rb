@@ -4661,17 +4661,19 @@ class Window_Selectable < Window_Base
 
     if @line_w > 0
       case @align 
-        when 0 # Left
-          rect.x = x
-        when 1 # Middle
-          rect.x = x + contents.width/2 - (@column_max * (rect.width + @spacing))/2
-        when 2 # Right
-          rect.x = x + contents.width - (@column_max * (rect.width + @spacing))
-        else
-          rect.x = 0
+      when 0 # Left
+        rect.x = x
+      when 1 # Middle
+        rect.x = x + contents.width/2 - (@column_max * (rect.width + @spacing))/2
+      when 2 # Right
+        rect.x = x + contents.width - (@column_max * (rect.width + @spacing))
+      else
+        rect.x = 0
       end
+    else
+      rect.x = x
     end
-    
+   
     rect.y = index / @column_max * @line_h
     
     if adjust_rect_x && @visible_cursor
