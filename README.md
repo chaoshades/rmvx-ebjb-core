@@ -23,6 +23,10 @@ OR
 
 ## Documentation
 
+### Configuration
+
+All of the configuration available are within the `CORE_CONFIG` module. Also, please note it also contains the `Y6::SETTING` from Yanfly 6 - Core Engine, it was easier to group them together.
+
 ### Controls & User Controls
 The concept of these is to encapsulate the code that is necessary to draw something on a window in classes that are reusable on every window. A control is the basic thing you want to draw on a window (ex.: a label, a line, an image, etc). An user control is a collection of controls that represents something more complex on a window (ex.: a composite of a label and an icon, a bar that fills like a classic HP bar, a graph for element resistances).
 
