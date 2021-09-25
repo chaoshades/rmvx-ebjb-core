@@ -101,6 +101,6 @@ Contains the script used for testing within the project, these aren't classic ru
 ## Credits 
 
 - Yanfly : Yanfly 6 - Core Engine
-- MACL Authors : Modules.Zlib
+- MACL Authors : Modules.Zlib, Bitmap Addon
 - Wortana : Wortana's 'gradient_fill_rect' Bug Fix
 - KGC : Window_Command Addon
